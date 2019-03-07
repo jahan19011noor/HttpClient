@@ -6,6 +6,10 @@ const routes: Routes = [
     path: 'config',
     loadChildren: './config/config.module#ConfigModule'
   },
+  {
+    path: 'downloader',
+    loadChildren: './downloader/downloader.module#DownloaderModule'
+  },
   { path: '', redirectTo: '/config', pathMatch: 'full' }
 ];
 

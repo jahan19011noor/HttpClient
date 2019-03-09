@@ -28,6 +28,7 @@ h1 {
     border-radius: 4px;
     cursor: pointer;
     cursor: hand;
+    margin-left: 10px;
   }
   button:hover {
     background-color: #cfd8dc;

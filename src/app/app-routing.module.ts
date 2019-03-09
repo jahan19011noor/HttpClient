@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'downloader',
     loadChildren: './downloader/downloader.module#DownloaderModule'
   },
+  {
+    path: 'heroes',
+    loadChildren: './heroes/heroes.module#HeroesModule'
+  },
   { path: '', redirectTo: '/config', pathMatch: 'full' }
 ];
 

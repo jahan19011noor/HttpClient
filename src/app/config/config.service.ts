@@ -4,10 +4,7 @@ import { Config } from './config';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-@Injectable({
-  providedIn: 'root'
-})
-
+@Injectable()
 export class ConfigService {
 
   // change this url to see errors
@@ -73,7 +70,7 @@ export class ConfigService {
         `Backend returned code ${error.status}, `+
         `body was: ${error.error}`
       )
-
+      
       // return an observable with a user-facting error message
       return throwError(
         'Something bad happened; please try again later.'

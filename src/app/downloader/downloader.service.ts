@@ -3,9 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { MessageService } from '../message.service'
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DownloaderService {
 
   constructor(private httpClient: HttpClient, private messageService: MessageService) { }

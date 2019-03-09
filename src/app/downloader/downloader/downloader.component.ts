@@ -4,6 +4,7 @@ import { DownloaderService } from '../downloader.service';
 @Component({
   selector: 'app-downloader',
   templateUrl: './downloader.component.html',
+  providers: [ DownloaderService ],
   styles: [`
     button {
       margin-right: 10px;

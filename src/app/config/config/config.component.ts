@@ -5,7 +5,8 @@ import { Config } from '../config';
 @Component({
   selector: 'app-config',
   templateUrl: './config.component.html',
-  styles: []
+  providers: [ ConfigService ],
+  styles: ['.error {color: red;}']
 })
 export class ConfigComponent implements OnInit {
 

@@ -14,6 +14,14 @@ const routes: Routes = [
     path: 'heroes',
     loadChildren: './heroes/heroes.module#HeroesModule'
   },
+  {
+    path: 'package-search',
+    loadChildren: './package-search/package-search.module#PackageSearchModule'
+  },
+  {
+    path: 'uploader',
+    loadChildren: './uploader/uploader.module#UploaderModule'
+  },
   { path: '', redirectTo: '/config', pathMatch: 'full' }
 ];
 
